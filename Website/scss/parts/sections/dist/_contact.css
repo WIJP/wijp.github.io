@@ -1,0 +1,91 @@
+main > section#contact {
+  position: relative;
+  overflow: hidden;
+  min-height: 50vh;
+  padding-bottom: 100px;
+  justify-content: space-between;
+}
+main > section#contact:before {
+  position: absolute;
+  content: " ";
+  background: linear-gradient(5deg, var(--primary-gradient-1), var(--primary-gradient-2));
+  transform: skew(10deg);
+  border-radius: 50%;
+  left: -25%;
+  bottom: -10%;
+  width: 150%;
+  height: 15%;
+  box-shadow: 0 0 20px 3px rgba(0, 0, 0, 0.0784313725);
+}
+main > section#contact > .container {
+  height: 100%;
+  position: relative;
+  z-index: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  gap: 100px;
+}
+main > section#contact > .container > .text {
+  text-align: center;
+}
+main > section#contact > .container > .text h3 {
+  font-weight: bold;
+  text-transform: uppercase;
+  color: var(--primary);
+  font-size: 1.4em;
+  letter-spacing: 2px;
+  margin-bottom: 15px;
+}
+main > section#contact > .container > .text p {
+  color: var(--text);
+  line-height: 1.4em;
+}
+main > section#contact > .container > .contact {
+  display: flex;
+  gap: 30px;
+}
+main > section#contact > .container > .contact > .section {
+  display: flex;
+  gap: 15px;
+}
+main > section#contact > .container > .contact > .section > .icon {
+  font-size: 3em;
+  color: var(--primary);
+}
+main > section#contact > .container > .contact > .section > .content {
+  padding: 3px 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  color: var(--text);
+}
+main > section#contact > .container > .contact > .section > .content > h4 {
+  text-transform: uppercase;
+  font-size: 1.2em;
+  opacity: 0.8;
+}
+main > section#contact > .container > .social {
+  display: flex;
+  gap: 30px;
+}
+main > section#contact > .container > .social > .platform {
+  width: 35px;
+  height: 35px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: var(--text);
+  font-size: 1.6em;
+  text-decoration: none;
+  padding: 10px;
+  border-radius: 50%;
+  background-color: var(--background-card);
+  transition: background-color 0.5s ease, transform 0.5s ease;
+}
+main > section#contact > .container > .social > .platform:hover {
+  background-color: var(--primary);
+  transform: scale(1.1);
+  transition: background-color 0.5s ease, transform 0.5s ease;
+}
