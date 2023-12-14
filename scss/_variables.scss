@@ -2,16 +2,16 @@ $break-small: 710px;
 $break-large: 1024px;
 
 :root {
-    --primary: #6c5ce7;
-    --primary-focus: #{lighten(#6c5ce7, 3)};
+    --primary: #f18a15;
+    --primary-focus: #{lighten(#f18a15, 3)};
     --background: #302e33;
     --background-card: #1b1b1f67;
     --background-focus: #{lighten(#302e33, 3)};
     --text: white;
     --text-on-primary: white;
 
-    --primary-gradient-1: #{darken(#7769df, 15)};
-    --primary-gradient-2: #{lighten(#6c5ce7, 5)};
+    --primary-gradient-1: #{darken(#cf7919, 15)};
+    --primary-gradient-2: #{lighten(#e69132, 5)};
 
     --navigation-button: #4c494e;
     --heading-background: #ffffff0a;
@@ -23,16 +23,16 @@ body.dark {
 }
 
 body.light {
-    --primary: #6c5ce7;
-    --primary-focus: #{lighten(#6c5ce7, 3)};
+    --primary: #f18a15;
+    --primary-focus: #{lighten(#f18a15, 3)};
     --background: #ebebeb;
     --background-card: #24242413;
     --background-focus: #{lighten(#d3d3d3, 3)};
     --text: rgb(31, 31, 31);
     --text-on-primary: white;
 
-    --primary-gradient-1: #{darken(#7769df, 15)};
-    --primary-gradient-2: #{lighten(#6c5ce7, 5)};
+    --primary-gradient-1: #{darken(#cf7919, 15)};
+    --primary-gradient-2: #{lighten(#e69132, 5)};
 
     --navigation-button: #636363;
     --heading-background: #00000010;
