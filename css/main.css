@@ -470,25 +470,25 @@ main > section#about > .container > .side > .facts > .fact > .value {
   color: var(--primary);
   text-align: right;
 }
-main > section#about > .container > .side > .studies {
+main > section#about > .container > .side > .projects {
   padding: 15px;
   background-color: var(--background-card);
   border-radius: 5px;
   display: flex;
   flex-direction: column;
 }
-main > section#about > .container > .side > .studies > .study {
+main > section#about > .container > .side > .projects > .project {
   color: var(--text);
 }
-main > section#about > .container > .side > .studies > .study:not(:last-child) {
+main > section#about > .container > .side > .projects > .project:not(:last-child) {
   margin-bottom: 25px;
 }
-main > section#about > .container > .side > .studies > .study h5 {
+main > section#about > .container > .side > .projects > .project h5 {
   font-size: 1.4em;
   margin-bottom: 10px;
   color: var(--primary);
 }
-main > section#about > .container > .side > .studies > .study p.time {
+main > section#about > .container > .side > .projects > .project p.time {
   font-size: 0.7em;
 }
 

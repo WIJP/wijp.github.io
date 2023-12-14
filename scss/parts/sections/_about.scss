@@ -134,7 +134,7 @@ main > section#about {
                 }
             }
 
-            > .studies {
+            > .projects {
                 padding: 15px;
 
                 background-color: var(--background-card);
@@ -142,7 +142,7 @@ main > section#about {
                 display: flex;
                 flex-direction: column;
 
-                > .study {
+                > .project {
                     color: var(--text);
                     
                     &:not(:last-child) {
