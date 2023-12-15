@@ -226,7 +226,6 @@ main > section#home > .container {
   }
 }
 main > section#home > .container > .image {
-  width: 27%;
   display: flex;
   justify-content: start;
 }
@@ -245,7 +244,7 @@ main > section#home > .container > .image {
 main > section#home > .container > .image > .border {
   overflow: hidden;
   padding: 10px;
-  border-radius: 30%;
+  border-radius: 12%;
   background-color: var(--primary-focus);
   box-shadow: 0 0 20px 3px rgba(0, 0, 0, 0.2039215686);
   transition: transform 0.5s ease;
@@ -255,7 +254,7 @@ main > section#home > .container > .image > .border {
   width: 100%;
 }
 main > section#home > .container > .image > .border > img {
-  border-radius: 30%;
+  border-radius: 12%;
   width: 100%;
   height: auto;
 }
