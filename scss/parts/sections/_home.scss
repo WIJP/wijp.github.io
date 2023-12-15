@@ -68,7 +68,7 @@ main > section#home {
                 overflow: hidden;
 
                 padding: 10px;
-                border-radius: 12%;
+                border-radius: 7%;
                 background-color: var(--primary-focus);
                 box-shadow: 0 0 20px 3px #00000034;
                 transition: transform 0.5s ease;
@@ -79,7 +79,7 @@ main > section#home {
                 width: 100%;
 
                 > img {
-                    border-radius: 12%;
+                    border-radius: 7%;
                     width: 100%;
                     height: auto;
                 }
