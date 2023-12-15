@@ -492,11 +492,11 @@ main > section#about > .container > .side > .projects > .project p.time {
   font-size: 0.7em;
 }
 
-main > section#catalogue {
+main > section#catalog {
   position: relative;
   overflow: hidden;
 }
-main > section#catalogue:before {
+main > section#catalog:before {
   position: absolute;
   content: " ";
   background: linear-gradient(175deg, var(--primary-gradient-1), var(--primary-gradient-2));
@@ -507,10 +507,10 @@ main > section#catalogue:before {
   height: 13%;
   box-shadow: 0 0 20px 3px rgba(0, 0, 0, 0.0784313725);
 }
-main > section#catalogue > .heading-container {
+main > section#catalog > .heading-container {
   margin-top: 140px;
 }
-main > section#catalogue > .container {
+main > section#catalog > .container {
   position: relative;
   z-index: 1;
   min-height: 40vh;
@@ -520,16 +520,16 @@ main > section#catalogue > .container {
   gap: 100px;
 }
 @media only screen and (max-width: 710px) {
-  main > section#catalogue > .container {
+  main > section#catalog > .container {
     padding-bottom: 50px;
   }
 }
 @media only screen and (min-width: 710px) and (max-width: 1024px) {
-  main > section#catalogue > .container {
+  main > section#catalog > .container {
     padding-bottom: 50px;
   }
 }
-main > section#catalogue > .container > .lists {
+main > section#catalog > .container > .lists {
   width: 100%;
   display: flex;
   justify-content: space-between;
@@ -538,19 +538,19 @@ main > section#catalogue > .container > .lists {
   gap: 40px;
 }
 @media only screen and (max-width: 710px) {
-  main > section#catalogue > .container > .lists {
+  main > section#catalog > .container > .lists {
     flex-direction: column;
   }
 }
 @media only screen and (min-width: 710px) and (max-width: 1024px) {
-  main > section#catalogue > .container > .lists {
+  main > section#catalog > .container > .lists {
     flex-direction: column;
   }
 }
-main > section#catalogue > .container > .lists > .list {
+main > section#catalog > .container > .lists > .list {
   flex: 1;
 }
-main > section#catalogue > .container > .lists > .list > h3 {
+main > section#catalog > .container > .lists > .list > h3 {
   font-weight: bold;
   text-transform: uppercase;
   color: var(--primary);
@@ -559,72 +559,72 @@ main > section#catalogue > .container > .lists > .list > h3 {
   letter-spacing: 2px;
 }
 @media only screen and (max-width: 710px) {
-  main > section#catalogue > .container > .lists > .list > h3 {
+  main > section#catalog > .container > .lists > .list > h3 {
     text-align: center;
   }
 }
 @media only screen and (min-width: 710px) and (max-width: 1024px) {
-  main > section#catalogue > .container > .lists > .list > h3 {
+  main > section#catalog > .container > .lists > .list > h3 {
     text-align: center;
   }
 }
-main > section#catalogue > .container > .lists > .list > .chips {
+main > section#catalog > .container > .lists > .list > .chips {
   margin-top: 20px;
   display: flex;
   flex-wrap: wrap;
   gap: 10px;
 }
 @media only screen and (max-width: 710px) {
-  main > section#catalogue > .container > .lists > .list > .chips {
+  main > section#catalog > .container > .lists > .list > .chips {
     justify-content: center;
   }
 }
 @media only screen and (min-width: 710px) and (max-width: 1024px) {
-  main > section#catalogue > .container > .lists > .list > .chips {
+  main > section#catalog > .container > .lists > .list > .chips {
     justify-content: center;
   }
 }
-main > section#catalogue > .container > .jobs {
+main > section#catalog > .container > .videos {
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
   gap: 30px;
 }
 @media only screen and (max-width: 710px) {
-  main > section#catalogue > .container > .jobs {
+  main > section#catalog > .container > .videos {
     flex-direction: column;
   }
 }
-main > section#catalogue > .container > .jobs > .job {
+main > section#catalog > .container > .videos > .job {
   color: var(--text);
   width: 30%;
 }
 @media only screen and (max-width: 710px) {
-  main > section#catalogue > .container > .jobs > .job {
+  main > section#catalog > .container > .videos > .job {
     width: 100%;
   }
 }
 @media only screen and (min-width: 710px) and (max-width: 1024px) {
-  main > section#catalogue > .container > .jobs > .job {
+  main > section#catalog > .container > .videos > .job {
     width: 45%;
   }
 }
-main > section#catalogue > .container > .jobs > .job h3 {
+main > section#catalog > .container > .videos > .job h3 {
   font-weight: bold;
   text-transform: uppercase;
   color: var(--primary);
   font-size: 1.3em;
   letter-spacing: 2px;
 }
-main > section#catalogue > .container > .jobs > .job p.subtitle {
+main > section#catalog > .container > .videos > .job p.subtitle {
   font-size: 0.9em;
   margin-bottom: 10px;
 }
-main > section#catalogue > .container > .jobs > .job p.time {
+main > section#catalog > .container > .videos > .job p.time {
   font-size: 0.7em;
   margin-bottom: 4px;
 }
-main > section#catalogue > .container > .jobs > .job p:not(.subtitle):not(.time) {
+main > section#catalog > .container > .videos > .job p:not(.subtitle):not(.time) {
   line-height: 1.5em;
 }
 
