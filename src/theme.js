@@ -6,28 +6,27 @@ const themeSwitcher = document.querySelector("#switcher");
 
 
 if(theme == undefined) {
-    localStorage.setItem(THEME_KEY, THEME_LIGHT);
-    theme = THEME_LIGHT;
+    localStorage.setItem(THEME_KEY, theme = THEME_LIGHT);
 }
 
 if(theme == THEME_LIGHT) {
-    document.body.classList.add(THEME_LIGHT);
+    document.body.classList.add(THEME_DARK);
     const classes = themeSwitcher.querySelector("i").classList;
 
-    classes.remove("fa-sun");
-    classes.add("fa-moon");
+    classes.remove("fa-moon");
+    classes.add("fa-sun");
 }
 
 themeSwitcher.addEventListener("click", () => {
-    document.body.classList.toggle(THEME_LIGHT);
+    document.body.classList.toggle(THEME_DARK);
 
-    const isLight = document.body.classList.contains(THEME_LIGHT);
+    const isDark = document.body.classList.contains(THEME_DARK);
     const classes = themeSwitcher.querySelector("i").classList;
 
     classes.remove("fa-sun");
     classes.remove("fa-moon");
 
-    classes.add(isLight ? "fa-moon" : "fa-sun");
+    classes.add(isDark ? "fa-sun" : "fa-moon");
 
-    localStorage.setItem(THEME_KEY, isLight ? THEME_LIGHT : THEME_DARK);
+    localStorage.setItem(THEME_KEY, isDark ? THEME_LIGHT : THEME_DARK);
 });
