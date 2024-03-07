@@ -1,0 +1,167 @@
+:root {
+    --background: #566984;
+    --background-dark: #233957;
+    --background-light: #859ab5;
+    --highlight: #f18915;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    background: var(---background-dark);
+    transition: 80ms ease-in-out;
+    font-family: "Young Serif", serif;
+    font-weight: 400;
+    font-style: normal;
+    text-decoration: none;
+    user-select: none;
+    -moz-user-select: none;
+    -webkit-user-select: none;
+    -webkit-user-drag: none;
+}
+
+body {
+    width: 100vw;
+    height: 100vh;
+    background-color: var(--background-dark);
+}
+
+h1, h2, h3, h4, h5, h6 {
+    color: var(--highlight);
+}
+
+a, p, u, b, i, span, small {
+    color: white;
+}
+
+header {
+    position: fixed;
+    margin: 0;
+    padding: 0;
+    left: 0;
+    top: 0;
+    width: 100vw;
+    height: 5rem;
+    backdrop-filter: blur(12px) ;
+    z-index: 100;
+}
+
+header img.logo {
+    position: absolute;
+    top: 0.5rem;
+    left: 1rem;
+    height: 4rem;
+    transition: 500ms ease-in-out;
+}
+
+header img.logo.large {
+    left: 40vw;
+    top: 25vh;
+    width: 20vw;
+    height: 20vw;
+}
+
+header div.socials {
+    position: absolute;
+    bottom: 0.5rem;
+    right: 1rem;
+}
+
+header div.socials a {
+    padding: 0.2rem;
+}
+
+header nav {
+    position: absolute;
+    width: 35vw;
+    bottom: 0.5rem;
+    left: calc((100vw - 35vw) / 2);
+    list-style: none;
+    text-decoration: none;
+}
+
+header nav a {
+    padding: 0.5rem;
+    color: white;
+    cursor: pointer;
+}
+
+header nav a.active,
+header nav a:hover,
+header nav a.active,
+header nav a.active svg,
+header nav a:hover svg,
+header nav a svg:hover,
+header div.socials a:hover svg,  
+header div.socials a svg:hover {
+    color: var(--highlight);
+}
+
+footer {
+    position: fixed;
+    margin: 0;
+    padding: 0;
+    left: 0;
+    bottom: 0;
+    width: 100vw;
+    height: 3rem;
+    text-align: center;
+    backdrop-filter: blur(12px);
+    z-index: 100;
+}
+
+footer div.container {
+    padding-top: 1rem;
+}
+
+footer div.container a {
+    color: var(--highlight);
+}
+
+footer div.container a:hover {
+    color: white;
+}
+
+main {
+    position: static;
+    width: 100vw;
+    height: 100vh;
+    overflow: scroll;
+}
+
+main section {
+    width: 100vw;
+    height: 100vh;
+    background: var(--background);
+}
+
+main section#home {
+    background: url("../img/home-thumbnail.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 10%;
+    text-align: center;
+}
+
+main section#home div.container {
+    padding-top: 65vh;
+}
+
+main section#home div.container iframe {
+    border-radius: 15px;
+}
+
+main section#about {
+}
+
+main section#catalog {
+}
+
+main section#projects {
+}
+
+main section#team {
+}
+
+main section#contact {
+}
