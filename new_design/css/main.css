@@ -53,6 +53,7 @@ header img.logo {
     position: absolute;
     top: 0.5rem;
     left: 1rem;
+    width: 4rem;
     height: 4rem;
     transition: 500ms ease-in-out;
 }
@@ -170,6 +171,10 @@ main section#home div.container iframe {
 main section#about {
 }
 
+main section#about h2.heading {
+    color: var(--background-dark);
+}
+
 main section#catalog {
     background: url("../img/catalog-thumbnail.png");
     background-repeat: no-repeat;
@@ -177,7 +182,15 @@ main section#catalog {
     background-position: 10%;
 }
 
+main section#catalog h2.heading {
+    color: var(--background-light);
+}
+
 main section#projects {
+}
+
+main section#projects h2.heading {
+    color: var(--background-dark);
 }
 
 main section#team {
@@ -187,6 +200,14 @@ main section#team {
     background-position: right;
 }
 
+main section#team h2.heading {
+    color: var(--background-light);
+}
+
 main section#contact {
-    height: 30vh;
+    height: 80vh;
+}
+
+main section#contact h2.heading {
+    color: var(--background-dark);
 }

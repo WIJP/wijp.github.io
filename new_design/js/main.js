@@ -1,8 +1,10 @@
+
+const header = document.querySelector("header");
 const navigation = document.querySelector("header > nav");
 const navigationParts = document.querySelectorAll("header > nav > a");
 const scrollButtons = document.querySelectorAll("[data-to]");
-const logoElement = document.querySelector("header > img");
-const mainElement = document.querySelector("main");
+const logo = document.querySelector("header > img");
+const main = document.querySelector("main");
 
 const scrollTo = (element, to, duration) => {
     if (duration <= 0) {
@@ -21,13 +23,13 @@ const scrollTo = (element, to, duration) => {
     }, 1);
 }
 
-mainElement.addEventListener("scroll", (event) => {
-    const top = event.pageYOffset || mainElement.scrollTop;
+main.addEventListener("scroll", (event) => {
+    const top = event.pageYOffset || main.scrollTop;
 
     if (top > 0)
-        logoElement.classList.remove("large");
+        logo.classList.remove("large");
     else
-        logoElement.classList.add("large");
+        logo.classList.add("large");
 
     let current;
     for (let part of navigationParts) {
@@ -53,7 +55,7 @@ const handleClick = (event) => {
     const link = event.target.closest("a");
     const target = document.querySelector(link.getAttribute("data-to"));
 
-    scrollTo(mainElement, target.offsetTop, 500)
+    scrollTo(main, target.offsetTop - header.clientHeight, 500)
 };
 
 for (let part of scrollButtons) {
