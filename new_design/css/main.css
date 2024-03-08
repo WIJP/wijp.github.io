@@ -28,6 +28,9 @@ body {
 
 h1, h2, h3, h4, h5, h6 {
     color: var(--highlight);
+    font-weight: bolder;
+    font-style: oblique;
+    font-variant: small-caps;
 }
 
 a, p, u, b, i, span, small {
@@ -133,6 +136,19 @@ main section {
     width: 100vw;
     height: 100vh;
     background: var(--background);
+    text-align: center;
+}
+
+main section h2.heading {
+    position: relative;
+    left: 0;
+    top: 2rem;
+    height: 5rem;
+    color: var(--highlight);
+    font-size: xx-large;
+}
+
+main section div.container {
 }
 
 main section#home {
@@ -155,13 +171,22 @@ main section#about {
 }
 
 main section#catalog {
+    background: url("../img/catalog-thumbnail.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 10%;
 }
 
 main section#projects {
 }
 
 main section#team {
+    background: url("../img/team-thumbnail.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: right;
 }
 
 main section#contact {
+    height: 30vh;
 }
