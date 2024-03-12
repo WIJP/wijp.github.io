@@ -10,7 +10,7 @@
     padding: 0;
     background: var(---background-dark);
     transition: 80ms ease-in-out;
-    font-family: "Young Serif", serif;
+    font-family: "Nunito Sans", serif;
     font-weight: 400;
     font-style: normal;
     text-decoration: none;
@@ -28,8 +28,9 @@ body {
 
 h1, h2, h3, h4, h5, h6 {
     color: var(--highlight);
-    font-weight: bolder;
-    font-style: oblique;
+    font-family: "Namdhinggo", serif, sans-serif;
+    font-weight: 800;
+    font-style: normal;
     font-variant: small-caps;
 }
 
@@ -54,7 +55,7 @@ header img.logo {
     top: 0.5rem;
     left: 1rem;
     width: 4rem;
-    height: 4rem;
+    height: 3rem;
     transition: 500ms ease-in-out;
 }
 
@@ -62,7 +63,7 @@ header img.logo.large {
     left: 40vw;
     top: 25vh;
     width: 20vw;
-    height: 20vw;
+    height: 16vw;
 }
 
 header div.socials {
@@ -157,11 +158,12 @@ main section#home {
     background-repeat: no-repeat;
     background-size: cover;
     background-position: 10%;
-    text-align: center;
+    text-align: right;
 }
 
 main section#home div.container {
     padding-top: 65vh;
+    padding-right: 26vw;
 }
 
 main section#home div.container iframe {
@@ -201,8 +203,6 @@ main section#projects div.container div.project {
     width: 15vw;
     height: 33vh;
     background: var(--background-light);
-    border: 2px solid var(--background-dark);
-    border-radius: 15px;
 }
 
 main section#projects div.container div.project div.heading {

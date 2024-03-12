@@ -1,7 +1,6 @@
-
 const header = document.querySelector("header");
 const navigation = document.querySelector("header > nav");
-const navigationParts = document.querySelectorAll("header > nav > a");
+const navigationParts = document.querySelectorAll("header nav > a");
 const scrollButtons = document.querySelectorAll("[data-to]");
 const logo = document.querySelector("header > img");
 const main = document.querySelector("main");
@@ -37,10 +36,10 @@ main.addEventListener("scroll", (event) => {
         const fromTop = element.offsetTop;
         const fromTopTreshold = fromTop - window.innerHeight * 0.5;
 
-        if (fromTopTreshold <= top)
-            current = part;
-        else
+        if (fromTopTreshold > top)
             break;
+
+        current = part;
     }
 
     for (let part of navigationParts) {
@@ -55,7 +54,7 @@ const handleClick = (event) => {
     const link = event.target.closest("a");
     const target = document.querySelector(link.getAttribute("data-to"));
 
-    scrollTo(main, target.offsetTop - header.clientHeight, 500)
+    scrollTo(main, target.offsetTop - header.clientHeight, 500);
 };
 
 for (let part of scrollButtons) {
