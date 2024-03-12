@@ -36,6 +36,7 @@ h1, h2, h3, h4, h5, h6 {
 
 a, p, u, b, i, span, small {
     color: white;
+    text-align: left;
 }
 
 header {
@@ -52,7 +53,7 @@ header {
 
 header img.logo {
     position: absolute;
-    top: 0.5rem;
+    top: 1rem;
     left: 1rem;
     width: 4rem;
     height: 3rem;
@@ -116,14 +117,20 @@ footer {
 }
 
 footer div.container {
+    text-align: center;
     padding-top: 1rem;
 }
 
-footer div.container a {
+footer div.container p {
+    text-align: center;
+}
+
+footer div.container p a {
+    text-align: center;
     color: var(--highlight);
 }
 
-footer div.container a:hover {
+footer div.container p a:hover {
     color: white;
 }
 
@@ -150,6 +157,10 @@ main section h2.heading {
     font-size: xx-large;
 }
 
+main section p.subtitle {
+    text-align: center;
+}
+
 main section div.container {
 }
 
@@ -158,19 +169,44 @@ main section#home {
     background-repeat: no-repeat;
     background-size: cover;
     background-position: 10%;
-    text-align: right;
+    text-align: center;
 }
 
 main section#home div.container {
-    padding-top: 65vh;
-    padding-right: 26vw;
-}
-
-main section#home div.container iframe {
-    border-radius: 15px;
+    padding-top: 60vh;
 }
 
 main section#about {
+}
+
+main section#about div.container {
+    position: relative;
+    top: 5vh;
+    left: 10vw;
+    width: 80vw;
+}
+
+main section#about div.container div.about {
+    position: relative;
+    width: 50vw;
+    float: left;
+    word-wrap: break-word;
+    word-break: keep-all;
+}
+
+main section#about div.container div.about h3 {
+    padding-bottom: 3vh;
+}
+
+main section#about div.container div.about p {
+    padding-top: 0.5vh;
+    padding-bottom: 0.5vh;
+}
+
+main section#about div.container div.side {
+    position: relative;
+    float: right;
+    width: 20vw;
 }
 
 main section#about h2.heading {

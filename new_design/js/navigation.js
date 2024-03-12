@@ -60,3 +60,8 @@ const handleClick = (event) => {
 for (let part of scrollButtons) {
     part.addEventListener("click", handleClick);
 }
+
+window.addEventListener("load", (event) => {
+    if (top > 0)
+        logo.classList.remove("large");
+});
