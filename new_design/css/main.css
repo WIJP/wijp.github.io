@@ -194,6 +194,10 @@ main section#about div.container div.about {
     word-break: keep-all;
 }
 
+main section#about h2.heading {
+    color: var(--background-dark);
+}
+
 main section#about div.container div.about h3 {
     padding-bottom: 3vh;
 }
@@ -205,12 +209,65 @@ main section#about div.container div.about p {
 
 main section#about div.container div.side {
     position: relative;
+    top: 10vh;
     float: right;
-    width: 20vw;
+    width: 10vw;
+    padding: 2vh 2vh 2vw 2vw;
+    background: var(--background-dark);
+    text-align: center;
 }
 
-main section#about h2.heading {
-    color: var(--background-dark);
+main section#about div.container div.side div.facts {
+    text-align: center;
+}
+
+main section#about div.container div.side div.facts div.fact {
+    padding-top: 1vh;
+    text-align: center;
+}
+
+main section#about div.container div.side div.facts div.fact div.name {
+    color: white;
+    text-align: center;
+}
+
+main section#about div.container div.side div.facts div.fact div.value {
+    color: var(--background-light);
+    text-align: center;
+}
+
+main section#about div.container div.side div.facts div.fact div.value a {
+    color: var(--background-light);
+    text-decoration: none;
+    text-align: center;
+}
+
+main section#about div.container div.side div.projects {
+    text-align: center;
+}
+
+main section#about div.container div.side div.projects h4 {
+    padding-top: 1vh;
+}
+
+main section#about div.container div.side div.projects div.project {
+    padding-top: 1vh;
+    text-align: center;
+}
+
+main section#about div.container div.side div.projects div.project h5.title {
+    color: white;
+    text-align: center;
+}
+
+main section#about div.container div.side div.projects div.project p.subtitle {
+    color: var(--background-light);
+    text-align: center;
+}
+
+main section#about div.container div.side div.projects div.project p.time {
+    color: var(--highlight);
+    text-align: center;
 }
 
 main section#catalog {
