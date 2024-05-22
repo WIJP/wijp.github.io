@@ -1,280 +1,37 @@
 <!doctype html>
 <html lang="nl">
-    <head>
-        <meta charset="UTF-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:ital,wght@0,300;0,400;0,700;1,400&display=swap" rel="stylesheet">
-        <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
-        <link rel="stylesheet" href="css/main.css">
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
-        
-        <link rel="apple-touch-icon" sizes="180x180" href="https://wijp.tv/apple-touch-icon.png">
-        <link rel="icon" type="image/png" sizes="32x32" href="https://wijp.tv/favicon-32x32.png">
-        <link rel="icon" type="image/png" sizes="16x16" href="https://wijp.tv/favicon-16x16.png">
-        <link rel="manifest" href="https://wijp.tv/site.webmanifest">
-        
-        <title>Wat is je probleem!? TV</title>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-        <meta name="theme-color" content="#f18a15" />
+    <meta name="theme-color" content="#f18915">
+
+    <meta name="title" content="Wat is je probleem!? TV">
+    <meta name="description" content="Programma om mentale kwetsbaarheid en maatschappelijke problemen meer bespreekbaar te maken.">
+
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://wijp.tv/">
+    <meta property="og:image" content="http://i.wijp.tv/web/card.png">
+    <meta property="og:title" content="Wat is je probleem!? TV">
+    <meta property="og:description" content="Programma om mentale kwetsbaarheid en maatschappelijke problemen meer bespreekbaar te maken.">
+
+    <meta property="twitter:card" content="summary_large">
+    <meta property="twitter:url" content="https://wijp.tv/">
+    <meta property="twitter:image" content="http://i.wijp.tv/web/card.png">
+    <meta property="twitter:title" content="Wat is je probleem!? TV">
+    <meta property="twitter:description" content="Programma om mentale kwetsbaarheid en maatschappelijke problemen meer bespreekbaar te maken.">
+
+    <link rel="apple-touch-icon" type="image/png" sizes="180x180" href="http://i.wijp.tv/web/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="http://i.wijp.tv/web/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="http://i.wijp.tv/web/favicon-16x16.png">
+    <link rel="manifest" href="/.webmanifest">
     
-        <meta name="title" content="Wat is je probleem!? TV">
-        <meta name="description" content="Programma om kwetsbaarheid meer bespreekbaar te maken!">
-    
-        <meta property="og:type" content="website">
-        <meta property="og:url" content="https://wijp.tv/">
-        <meta property="og:image" content="https://wijp.tv/img/card.png">
-        <meta property="og:title" content="Wat is je probleem!? TV">
-        <meta property="og:description" content="Programma om kwetsbaarheid meer bespreekbaar te maken!">
-    
-        <meta property="twitter:card" content="summary_large">
-        <meta property="twitter:url" content="https://wijp.tv/">
-        <meta property="twitter:image" content="https://wijp.tv/img/card.png">
-        <meta property="twitter:title" content="Wat is je probleem!? TV">
-        <meta property="twitter:description" content="Programma om kwetsbaarheid meer bespreekbaar te maken!">
-    </head>
-    <body>
-        <aside class="navigation">
-            <nav>
-                <a id="menu">
-                    <i class="fas fa-caret-down"></i>
-                </a>
-                <a data-to="#home" class="active">
-                    <i class="fas fa-home"></i>
-                </a>
-                <a data-to="#about">
-                    <i class="fas fa-address-card"></i>
-                </a>
-                <a data-to="#catalog">
-                    <i class="fas fa-rss"></i>
-                </a>
-                <a data-to="#projects">
-                    <i class="fas fa-briefcase"></i>
-                </a>
-                <a data-to="#team">
-                    <i class="fas fa-users"></i>
-                </a>
-                <a data-to="#contact">
-                    <i class="fas fa-at"></i>
-                </a>
-            </nav>
-        </aside>
-
-        <aside class="switcher" id="switcher">
-            <i class="fas fa-moon"></i>
-        </aside>
-
-        <main>
-            <section id="home">
-                <div class="container">
-                    <div class="image">
-                        <div class="border">
-                            <iframe width="560" height="315" src="https://www.youtube.com/embed/A0wSuAaFNz4?si=IzFZYH46rVn14114" title="Meest recente video" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-                        </div>
-                    </div>
-                    <div class="about">
-                        <h1>Wat is je probleem!?</h1>
-                        <p class="subtitle">TV Programma</p>
-
-                        <a class="button" data-to="#about">
-                            <div class="icon">
-                                <i class="fas fa-address-card"></i>
-                            </div>
-    
-                            <div class="text">
-                                wie zijn wij?
-                            </div>
-                        </a>
-
-                        <a class="button" data-to="#catalog">
-                            <div class="icon">
-                                <i class="fas fa-rss"></i>
-                            </div>
-    
-                            <div class="text">
-                                onze videos
-                            </div>
-                        </a>
-
-                        <a class="button" data-to="#projects">
-                            <div class="icon">
-                                <i class="fas fa-briefcase"></i>
-                            </div>
-    
-                            <div class="text">
-                                onze projecten
-                            </div>
-                        </a>
-
-                        <a class="button" data-to="#team">
-                            <div class="icon">
-                                <i class="fas fa-users"></i>
-                            </div>
-    
-                            <div class="text">
-                                meet the team!
-                            </div>
-                        </a>
-
-                        <a class="button" data-to="#contact">
-                            <div class="icon">
-                                <i class="fas fa-at"></i>
-                            </div>
-    
-                            <div class="text">
-                                vertel het aan ons!
-                            </div>
-                        </a>
-                    </div>
-                </div>
-            </section>
-            <section id="about">
-                <div class="heading-container">
-                    <span class="background">over ons</span>
-                    <h2 class="heading">Wie zijn wij(p) dan?</h2>
-                </div>
-                <div class="container">
-                    <div class="about">
-                        <h3>Wat is je probleem!?</h3>
-                        <p>
-                            Mensen die mentaal ergens mee zitten kennen het vast wel,
-                            je durft eindelijk wat los te laten over je AD(H)D of je depressie op werk,
-                            tegen familie of vrienden en meteen word je anders behandeld.
-                        </p>
-                        <p>
-                            Wat is nou eigenlijk je probleem?
-                        </p>
-                        <p>
-                            Via ons programma willen we onder andere mentale gezondheid bespreekbaar maken zonder elkaar op uiterlijk te beoordelen!
-                            Dit programma is ontstaan nadat deelnemers van Out of the Box TV bij elkaar zijn gekomen en erachter zijn gekomen
-                            dat er nog steeds heel veel stigma en bevooroordeling zit op mensen die mentaal wat meer in de knel zitten.
-                        </p>
-                        <p>
-                            Samen willen wij dat mentale en maatschappelijke problemen in Nederland meer begrepen worden, maar hoe bereiken we dit?
-                        </p>
-                        <p>
-                            Wij denken dat dit kan door het bespreekbaar te maken, want voor ons heeft dat heel erg goed geholpen!
-                            Door middel van gerichte onderwerpen geven wij je een blik in het leven van iemand die ergens mee zit.
-                            Op een interessante manier laten we twee complementaire personen met een vergelijkbaar ‘probleem’ met elkaar in gesprek gaan.
-                        </p>
-                        <p>
-                            Hoe ervaart de ander de maatschappij met zijn problematiek?
-                        </p>
-                        <p>
-                            We laten de gasten hun verhaal doen om zo de kijker te informeren hoe zij het ervaren en mensen met herkenbare
-                            problematieken gerust te stellen dat jij je problematiek niet bent, maar dat het enkel een deel van je is.
-                            Ons doel van het programma is dat gestigmatiseerde ‘problemen’ bespreekbaar worden thuis,
-                            op werk of in je vriendengroep, en zo dus hun stigma kwijtraken.
-                        </p>
-                    </div>
-                    <div class="side">
-                        <div class="facts">
-                            <h4>Feiten</h4>
-                            <div class="fact">
-                                <div class="name">Onderdeel van</div>
-                                <div class="value"><a style="text-decoration:none;color:inherit;" href="https://outoftheboxtv.nl/" target="_blank">Out of the Box TV</a></div>
-                            </div>
-                            <div class="fact">
-                                <div class="name">Actief sinds</div>
-                                <div class="value">2023</div>
-                            </div>
-                        </div>
-                        <div class="projects">
-                            <h4>Recente projecten</h4>
-                            <div class="project">
-                                <p class="time">2023 &mdash; heden</p>
-                                <h5>Voorbeeld project</h5>
-                                <p class="subtitle">Voorbeeld omschrijving</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </section>
-            <section id="catalog">
-                <div class="heading-container">
-                    <span class="background">catalogus</span>
-                    <h2 class="heading">onze videos</h2>
-                </div>
-                <div class="container">
-                </div>
-            </section>
-            <section id="projects">
-                <div class="heading-container">
-                    <span class="background">projecten</span>
-                    <h2 class="heading">waar zijn we mee bezig?</h2>
-                </div>
-                <div class="container">
-                </div>
-            </section>
-            <section id="team">
-                <div class="heading-container">
-                    <span class="background">wijp</span>
-                    <h2 class="heading">meet the team</h2>
-                </div>
-                <div class="container">
-                </div>
-            </section>
-            <section id="contact">
-                <div class="heading-container">
-                    <span class="background">contact</span>
-                    <h2 class="heading">vertel het aan ons</h2>
-                </div>
-                <div class="container">
-                    <div class="text">
-                        <h3>Wat is je probleem!?</h3>
-    
-                        <p>Heb je een verhaal om aan ons te vertellen?</p>
-
-                        <a class="button" href="mailto:redactie@wijp.tv?subject=Ik heb een verhaal&body=Beste,%0D%0A%0D%0AIk heb een verhaal dat ik aan jullie wil vertellen.%0D%0A%0D%0AMet vriendelijke groet,%0D%0A<Jouw naam>" target="_blank" rel="noopener noreferrer">
-                            <div class="icon">
-                                <i class="fas fa-at"></i>
-                            </div>
-    
-                            <div class="text">
-                                redactie@wijp.tv
-                            </div>
-                        </a>
-
-                        <p>Neem ook een kijkje op onze socials</p>
-                    </div>
-
-                    <div class="social">
-                        <a href="https://www.youtube.com/@WatisjeProbleemTV" target="_blank" class="platform" rel="Link to YouTube">
-                            <i class="fab fa-youtube"></i>
-                        </a>
-                        <a href="https://www.tiktok.com/@watisjeprobleemtv" target="_blank" class="platform" rel="Link to TikTok">
-                            <i class="fab fa-tiktok"></i>
-                        </a>
-                        <a href="https://www.instagram.com/watisjeprobleemtv/" target="_blank" class="platform" rel="Link to Instagram">
-                            <i class="fab fa-instagram"></i>
-                        </a>
-                        <a href="https://www.facebook.com/watisjeprobleemtv" target="_blank" class="platform" rel="Link to Facebook">
-                            <i class="fab fa-facebook"></i>
-                        </a>
-                        <a href="https://discord.gg/J7uFKFE5uf" target="_blank" class="platform" rel="Link to Discord">
-                            <i class="fab fa-discord"></i>
-                        </a>
-                    </div>
-                </div>
-            </section>
-        </main>
-
-        <footer>
-            <div class="container">
-                <div class="side">
-                    <p><a href="https://wijp.tv">WIJP.TV</a> &copy; <script type="application/javascript">document.write(new Date().getFullYear());</script>. Alle rechten voorbehouden.</p>
-                    <p><small>Door deze website te gebruiken, gaat u akkoord met het gebruik van cookies (waarbij uw themakeuze wordt opgeslagen) op deze website. Als u het er niet mee eens bent, verlaat u deze pagina onmiddellijk.</small></p>
-                </div>
-            </div>
-        </footer>
-
-
-        <script src="https://code.jquery.com/jquery-3.7.0.min.js" integrity="sha256-2Pmvv0kuTBOenSvLm6bvfBSSHrUJ+3A7x6P5Ebd07/g=" crossorigin="anonymous"></script>
-        <script src="https://apis.google.com/js/api.js"></script>
-        <script src="src/navigation.js"></script>
-        <script src="src/theme.js"></script>
-    </body>
+    <title>Wat is je Probleem!? &mdash; TV Programma</title>
+</head>
+<body style="margin: 10% 25%;width:50%;height:50%;text-align:center;background-color:#233957;color:#859ab5;overflow:hidden;">
+    <img src="logo.png" alt="Logo van WIJP.TV" style="width:50vh;">
+    <h1>Deze website is momenteel in ontwikkeling.</h1>
+    <h3>Kijk snel terug om te zien wat we allemaal van plan zijn!</h3>
+</body>
 </html>
